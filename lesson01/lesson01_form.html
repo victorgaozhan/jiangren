@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lesson01 - HTML&CSS - Victor Gao</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel=""
+    <style>
+      body{
+        font-family:Verdana;
+      }
+
+      form{
+        max-width: 500px;
+        margin: 10px;
+        background-color: azure;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      h1{
+        text-align: center;
+      }
+
+      input[type=text],
+      input[type=password],
+      input[type=textarea],
+      input[type=email],
+      input[type=date],
+      select {
+        height: 30px;
+        box-sizing: border-box;
+        width: 100%;
+        background-color:rgb(233, 236, 231);
+        border:0ch;
+        margin-bottom: 20px;
+        padding: 5px;
+        font-size: medium;
+        border-radius: 5px;
+      }
+
+      button{
+        height: 30px;
+        box-sizing: border-box;
+        width: 100%;
+        border:0ch;
+        margin-bottom: 20px;
+        background-color:rgb(55, 211, 102);
+        border-radius: 5px;
+        color: aliceblue;
+      }
+
+      button[type=submit]{
+        width: 30%;
+      }
+      button[type=reset]{
+        width: 15%;
+        background-color: gray;
+      }
+
+      .buttonHolder{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <a id="top" href="index.html"> &lt;&nbsp; Home</a><br>
+    <form>
+      <h1>Sign Up</h1>
+      <ul>
+        <li><h3>Your basic info</h3></li>
+          <label for="firstname">First Name: </label>
+          <input id="firstname" name="firstname" type="text"/>
+
+          <label for="lastname">Last Name: </label>
+          <input id="lastname" name="lastname" type="text"/>
+
+          <label for="email">Email: </label>
+          <input id="email" name="email" type="email" placeholder="johnsmith@gmail.com" required/>
+
+          <label for="username">User Name: </label>
+          <input id="username" name="username" type="text"/>
+
+          <label for="password">Password: </label>
+          <input id="password" type="password"/>
+
+        <li><h3>Other Details</h3></li>     
+          <label for="birthdate">Birth Date:</label>
+          <input id="birthdate" type="date"/>
+
+          Gender: <br>
+          <input type="radio" name="gender" id="male" checked/>
+          <label for="male">Male</label><br/>
+
+          <input type="radio" name="gender" id="female"/>
+          <label for="female">Female</label><br/>
+
+          <input type="radio" name="gender" id="other"/>
+          <label for="other">Other</label><p>
+
+          <label for="country">Country:</label>
+          <select id="country">
+            <option>China</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>Turkey</option>
+          </select><p>
+      </ul>   
+
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I'm accepting Terms and Condotions</label><p>
+      <div class="buttonHolder">
+        <button type="submit">Sign Up</button>
+        <button type="reset">Reset</button>
+      </div>
+      <a href="#top">^Top</a>
+  </form>   
+  </body>
+</html>
+
