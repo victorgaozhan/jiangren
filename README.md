@@ -1,2 +1,1 @@
-# Victor Gao's Homework in Jiangren fullstack developer class
-# Study Only
+Victor Gao's Homework in Jiangren fullstack developer class (Study Only)
