@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="xxx.php" method="post">
+        <h1>Sign Up</h1>
+        <fieldset>
+            <legend>Your basic Info</legend>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname" class="textInput">
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" id="lastname" class="textInput">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="textInput">
+            <label for="username">User Name:</label>
+            <input type="text" name="username" id="username" class="textInput">         
+            <label for="password">Password:</label>
+            <input type="text" name="password" id="password" class="textInput">                                
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>Other Details</legend>
+            <label for="date">Birth Date:</label>
+            <input type="date" class="textInput" id="date" name="date"><p>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" checked><label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender"><label for="female">Female</label><br>            
+            <input type="radio" id="other" name="gender"><label for="other">Other</label><br>
+        </fieldset>
+        <fieldset>
+            <label for="country">Country:</label><br>
+            <select id="country" name="country">
+                <option value="CN">China</option>
+                <option value="US">USA</option>
+                <option value="UK">UK</option>
+                <option value="TR" selected>Turkey</option>
+            </select>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <div>
+                <input type="checkbox" id="terms" required/>
+                <label for="terms">I'm accepting Terms and Conditions</label>
+            </div>
+            <button type="submit">Sign Up</button>
+        </fieldset>
+    </form>
+</body>
+</html>
