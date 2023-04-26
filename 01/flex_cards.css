@@ -19,7 +19,7 @@ h1{
     max-width: 300px;
     min-height: 250px;
     background-color: aquamarine;
-    box-sizing: border-box; /*不受padding, border影响*/
+    box-sizing: border-box; /*This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease.*/
     color: #fff;
     padding: 30px;
     border-radius: 3px;
